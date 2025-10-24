@@ -31,7 +31,7 @@ export default function Home() {
           {
             typeof NextSvgUrlAlias === 'function'
               ? 'Error: SVG URL Alias is a function'
-              : <img src={typeof NextSvgUrlAlias} />
+              : <img src={NextSvgUrlAlias} />
           }
         </div>
       </main>
