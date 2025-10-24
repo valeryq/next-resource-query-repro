@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {
+    rules: {
+      '*.svg': {
+        as: '*.js',
+        loaders: ['./next/turbopack/svg-loader.mjs'],
+      },
+    },
+  },
 };
 
 export default nextConfig;
